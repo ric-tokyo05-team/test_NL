@@ -1,7 +1,8 @@
+#coding :utf-8
 from janome.tokenizer import Tokenizer
  
 t = Tokenizer()
-tokens = t.tokenize(u'お台場で焼肉が食べたい')
+tokens = t.tokenize(u'表参道でカフェ行きたい！')
 for token in tokens:
     # 品詞を取り出し
     partOfSpeech = token.part_of_speech.split(',')[0]
